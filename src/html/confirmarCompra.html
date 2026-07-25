@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../assets/svg/logo-electro-tech-el-salvador.svg">
+    <title>Confirmar compra</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/custom-breakpoint.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-utilities.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../assets/svg/logo-electro-tech-el-salvador.svg" width="86"
+                    alt="Electro Tech - El Salvador">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/QuienesSomos.html">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Tutoriales.html">Tutoriales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Descargas.html">Descargas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar">
+                        <span class="input-group-text">
+                            <img src="../../assets/svg/lupa.svg" alt="Lupa">
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main class="p-3">
+        <div class="row">
+            <section class="col-12 col-md-6 col-lg-6 seccion-detalles-compra">
+                <h1 class="mb-3">Confirmar compra</h1>
+                <div class="contenedor-imagen-compra imagen-fit">
+                    <img src="https://m.media-amazon.com/images/I/71sQd9T94lL._AC_SX679_.jpg" id="imagen-producto" alt="imagen producto">
+                </div>
+                <div class="resumen-compra">
+                    <h4 class="nombre-producto">AeroPro Max Laptop</h4>
+                    <div class="detalles-precio d-flex flex-column gap-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>Subtotal</p>
+                            <p class="subtotal">-</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>IVA</p>
+                            <p class="iva">-</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>Envio</p>
+                            <p class="envio">-</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>Cupón</p>
+                            <p class="descuento-cupon">-</p>
+                        </div>
+                        <div class="detalle-total d-flex align-items-center justify-content-between">
+                            <p class="fw-medium">TOTAL</p>
+                            <p class="total">-</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-12 col-md-6 col-lg-6 pt-3 p-md-3 p-lg-3 seccion-confirmacion">
+                <div class="contenedor-cart imagen-fit">
+                    <img src="../../assets/images/cart-electro-tech.png" alt="Cart">
+                </div>
+                <div class="formulario-compra">
+                    <form class="enviar_pedido">
+                        <div class="row gap-3">
+                            <div class="col-md-12 col-lg-12">
+                                <label for="direccion" class="form-label">Dirección de envío</label>
+                                <input type="text" class="form-control" name="direccion" required id="direccion" placeholder="Zona centro 123">
+                            </div>
+                            <div class="mb-3 col-12 col-md-12 col-lg-12">
+                                <label for="cupon" class="form-label">Cupón de descuento</label>
+                                <input type="text" class="form-control" name="cupon" required id="cupon" placeholder="PRICOMPRA123">
+                            </div>
+                        </div>
+                        <div class="alert alert-success" role="alert" style="display: none;"></div>
+                        <div class="alert alert-danger" role="alert" style="display: none;">
+                            <p>Cupón no valido, ingrese uno nuevo</p>                        
+                        </div>
+                        <button type="submit" class="btn btn-success">
+                            <img src="../../assets/svg/whatsapp.svg" alt="Whatsapp">
+                            Enviar pedido
+                        </button>
+                        <div class="alert alert-danger monto-no-valido mt-3" role="alert" style="display: none;">
+                            <p>Los montos no son validos</p>                        
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="../js/confirmarCompra.js"></script>
+<script src="../js/bootstrap/bootstrap.min.js"></script>
+</html>

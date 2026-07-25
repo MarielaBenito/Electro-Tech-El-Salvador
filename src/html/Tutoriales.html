@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../assets/svg/logo-electro-tech-el-salvador.svg">
+    <title>Tutoriales</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-utilities.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/svg/logo-electro-tech-el-salvador.svg" width="86" alt="Electro Tech - El Salvador">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/QuienesSomos.html">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Tutoriales.html">Tutoriales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Descargas.html">Descargas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar">
+                        <span class="input-group-text">
+                            <img src="../../assets/svg/lupa.svg" alt="Lupa">
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main class="main-pb-custom px-3">
+        <div class="row gap-2 gap-md-5 gap-lg-5">
+            <div class="col-12 col-md-7 col-lg-7">
+                <h1 class="py-3">Videos tutoriales</h1>
+                <section class="col-12 col-md-12 col-lg-12">
+                    <div class="video-galeria"></div>
+                </section>
+                <section class="col-12 col-md-12 col-lg-12 py-3 d-flex flex-column gap-3 justify-content-center">
+                    <h3 class="titulo-video"></h3>
+                    <p class="descripcion-video"></p>
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-success">
+                            <img src="../../assets/svg/whatsapp.svg" alt="Whatsapp">
+                            Compartir video
+                        </button>
+                    </div>
+                </section>
+                <div class="carousel-tutorial mx-3 position-relative">
+                    <div class="ver-anterior icon-accion">
+                        <img src="../../assets/svg/chevron-izquierda.svg" alt="Izquierda">
+                    </div>
+                    <div class="contenedor-imagenes gap-3"></div>
+                    <div class="ver-siguiente icon-accion">
+                        <img src="../../assets/svg/chevron-derecha.svg" alt="Derecha">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <h1 class="py-3">Videos recomendados</h1>
+                <section class="d-flex flex-column gap-3 seccion-videos-recomendado">
+                    <iframe 
+                        width="100%" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/c6Grr8r5j5g?si=_Mt7h-q8YNVWSmb8" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                    <iframe 
+                        width="100%" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/Annq2FNQojI?si=0giwNVhPlirVOz3B" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </section>
+                <section class="seccion-podcast">
+                    <h3 class="py-3">Podcast ElectroTech</h3>
+                    <audio 
+                        controls
+                    >
+                        <source 
+                            src="../../assets/audios/mision_y_vision_ElectroTech.mp3" 
+                            type="audio/mp3"
+                        />
+                    </audio> 
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed-bottom">
+        <p>©ElectroTech | Mariela Deodanes | Marcos Salguero | Sara Alfaro | ©<span class="anio_actual"></span> </p>
+    </footer>
+</body>
+<script src="../js/index.js"></script>
+<script src="../js/tutoriales.js"></script>
+<script src="../js/bootstrap/bootstrap.min.js"></script>
+</html>

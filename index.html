@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/svg/logo-electro-tech-el-salvador.svg">
+    <title>ElectroTech - El Salvador</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./src/css/bootstrap/bootstrap-utilities.min.css">
+</head>
+<body>
+   <!-- Flor Mariela Deodanes Benito, Marcos Levi Rivas Salguero, Sara Jael Alfaro Pineda-->
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/svg/logo-electro-tech-el-salvador.svg" width="86" alt="Electro Tech - El Salvador">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./src/html/Catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./src/html/QuienesSomos.html">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./src/html/Tutoriales.html">Tutoriales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./src/html/Descargas.html">Descargas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./src/html/Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar">
+                        <span class="input-group-text">
+                            <img src="./assets/svg/lupa.svg" alt="Lupa">
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="banner row">
+        <div class="col-12 col-md-6 col-lg-6 seccion_detalles">
+            <h1>ElectroTech El Salvador: Electrificando el futuro con productos de última generación</h1>
+            <p>ElectroTech ofrece dispositivos electrónicos y gadgets premium diseñados para un rendimiento incomparable y un estilo elegante. Explora nuestra gama de laptops de alto rendimiento, potentes smartphones y tecnología para el hogar inteligente, creados para elevar tu vida digital. ¡Actualízate hoy!</p>
+            <a href="./src/html/Catalogo.html" class="btn btn-secondary">Explorar todos los productos</a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 seccion_image d-none d-sm-none d-md-block d-lg-block">
+            <div class="contentedor_imagen">
+                <img src="./assets/images/banner.webp" width="240px" alt="Banner Electro tech">
+            </div>
+        </div>
+    </section>
+    <section class="seccion_tutorial_principal">
+        <h2>Video tutorial destacado</h2>
+        <div class="seccion_video row mt-3 gap-4">
+            <div class="video col-12 col-md-5 col-lg-3">
+                <video
+                    controls
+                    poster="./assets/images/miniatura.jpg"
+                >
+                    <source src="./assets/videos/video_tutorial.mp4" type="video/mp4" />
+                    <p>Este formato no es soportado</p>
+                </video>
+            </div>
+            <div class="detalles_video col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center gap-2">
+                <div class="detalles_video_titulo">
+                    <h2>Cómo comprar y rastrear su pedido</h2>
+                </div>
+                <div class="detalles_video_descripcion">
+                    <p>
+                        Vea este tutorial completo para aprender cómo encontrar los productos que necesita, 
+                        agregarlos a su carrito, completar un pago seguro y rastrear su paquete. 
+                        Hacemos que la compra de productos electrónicos premium sea fácil y eficiente 
+                        utilizando nuestra nueva e intuitiva plataforma de comercio electrónico. 
+                        ¡Comience a comprar hoy mismo!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="fixed-bottom">
+        <p>©ElectroTech | Mariela Deodanes | Marcos Salguero | Sara Alfaro | ©<span class="anio_actual"></span> </p>
+    </footer>
+</body>
+<script src="./src/js/index.js"></script>
+<script src="./src/js/bootstrap/bootstrap.min.js"></script>
+</html>
