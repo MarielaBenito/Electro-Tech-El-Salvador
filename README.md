@@ -35,9 +35,3 @@ Cómo contribuir
 Contacto
 - Equipo: Mariela Benito.
 - Para soporte o preguntas, usar la página `src/html/Contacto.html`.
-
-Licencia
-- No se especificó una licencia en el repositorio. Añade un archivo `LICENSE` si deseas compartir este proyecto bajo una licencia concreta (recomiendo MIT si quieres permitir reutilización).
-
----
-Archivo generado automáticamente: README profesional adaptado al contenido del proyecto.
